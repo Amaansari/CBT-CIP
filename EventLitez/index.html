@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventLitez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>EventLitez</h1>
+        <div id="create-container">
+            <button type="button" id="createbtn">Create Event</button>
+        </div>
+        <div class="event-list">
+            No Event
+        </div>
+        
+       <form > 
+            <h2>Event Information</h2>
+            <i class="fa-solid fa-x form-cross"></i>
+            <div class="form-field">
+                <label for="title">Title</label>
+                <input id="title" placeholder="Event name" type="text" required>
+            </div>
+            <div class="form-field">
+                <label for="date">Date</label>
+                <input id="date" type="date" required>
+            </div>
+            <div class="form-field">
+                <label for="time">Time</label>
+                <input id="time" type="time" required>
+            </div>
+            <div class="form-field">
+                <label for="location">Location</label>
+                <input id="location" placeholder="City" type="text" required>
+            </div>
+
+            <button id="submit">Save</button>
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
