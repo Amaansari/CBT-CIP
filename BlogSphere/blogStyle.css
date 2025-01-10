@@ -1,0 +1,94 @@
+:root{
+    --black:#333;
+    --orange:#e67e22;
+    --light-color:#777;
+    --border: 1px solid rgba(0,0,0,0.2);
+    --box-shadow:0 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: lighter;
+    outline: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: #eee;
+}
+
+.card{
+    width: 60%;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border: var(--border);
+    border-radius: 1rem;
+}
+
+.card h1{
+    text-align: center;
+    color: var(--black);
+}
+
+.card p{
+    color: var(--light-color);
+    line-height: 1.7;
+}
+
+.divider{
+    background-color: rgb(218, 213, 213);
+    height:0.5px;
+    margin: 1rem 0;
+}
+
+.comments h3{
+    margin-bottom: 1rem;
+}
+
+.comments p{
+    background: #eee;
+    padding: 1rem .5rem;
+    margin: 1rem 0;
+    border: var(--border);
+    border-radius: .5rem;
+}
+
+.comments input{
+    background: #eee;
+    border: var(--border);
+    border-radius: .2rem;
+    padding: 0.5rem;
+}
+
+.comments button{
+    background:var(--black);
+    padding: .5rem;
+    color: #fff;
+    border-radius: .2rem;
+    display: block;
+}
+
+.comments button:hover{
+    background: var(--orange);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+
+@media screen and (max-width:768px){
+    .card{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
